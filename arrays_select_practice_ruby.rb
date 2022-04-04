@@ -32,29 +32,58 @@
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
-items = [
-  {name: "chair", price: 100}, 
-  {name: "pencil", price: 1}, 
-  {name: "book", price: 4},
-  {name: "laptop", price: 1500},
-  {name: "tv", price: 500},
+# items = [
+#   {name: "chair", price: 100}, 
+#   {name: "pencil", price: 1}, 
+#   {name: "book", price: 4},
+#   {name: "laptop", price: 1500},
+#   {name: "tv", price: 500},
   
-]
-new_items = []
+# ]
+# new_items = []
 
-i = 0
-while i < items.length
-  if items[i][:price] > 5
-    new_items << items[i]
-  end
-  i += 1
-end
+# i = 0
+# while i < items.length
+#   if items[i][:price] > 5
+#     new_items << items[i]
+#   end
+#   i += 1
+# end
 
-p new_items
+# p new_items
 
 
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+# numbers = [2, 4, 5, 1, 8, 9, 7, 10, 15, 14, 20, 23, 18, 32]
+# new_numbers = []
+
+# i = 0
+# while i < numbers.length
+#   if numbers[i].even?
+#     new_numbers << numbers[i]
+#   end
+#   i += 1
+# end
+
+# p new_numbers
+
+# numbers.each do |number|
+#   if number % 2 == 0
+#     new_numbers << number
+#   end
+# end
+
+# p new_numbers
+
+# new_numbers = numbers.select do |number|
+#   number % 2 == 0
+# end
+
+# p new_numbers
+
+
 
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
