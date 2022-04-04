@@ -1,16 +1,27 @@
 // # 1. Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
 
 // let number = parseInt(window.prompt("enter number:"));
-let number = 20;
-if (number === 10) {
-  console.log(0);
-} else {
-  console.log(-1);
-}
+// let number = 20;
+// if (number === 10) {
+//   console.log(0);
+// } else {
+//   console.log(-1);
+// }
 
 // # 2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
 
 // # 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+
+// let numberOne = 13;
+// let numberTwo = 14;
+// let numberOne = parseInt(window.prompt("enter number 1 :"));
+// let numberTwo = parseInt(window.prompt("enter number 2 :"));
+
+// if (numberOne < 10 && numberTwo < 10) {
+//   console.log(1);
+// } else {
+//   console.log(0);
+// }
 
 // # 4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
 
