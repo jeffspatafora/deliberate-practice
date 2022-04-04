@@ -8,15 +8,29 @@
 
 // # 2. Write a while loop that prints the word "hello" 5 times.
 
-let word = "hello";
-let i = 0;
-while (i < 5) {
-  console.log(word);
-  i++;
-}
+// let word = "hello";
+// let i = 0;
+// while (i < 5) {
+//   console.log(word);
+//   i++;
+// }
 
 // # 3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
 
+let word = window.prompt("enter word:");
+while (word.toLowerCase() !== "stop") {
+  word = window.prompt("enter another word. Type 'stop' to end:");
+}
+
+while (true) {
+  let word = window.prompt("enter word:");
+  if (word.toLowerCase() === "stop") {
+    break;
+  }
+}
+
+// let word = "test";
+// console.log(word.toUpperCase());
 // # 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
 // # 5. Write a while loop that prints the number 9000 ten times.
