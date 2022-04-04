@@ -15,22 +15,43 @@
 #  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
 #     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
 
-strings = ["who", "you", "what", "hello", "when", "yesterday", "where", "home", "why", "idk", "how", "who cares"]
+# strings = ["who", "you", "what", "hello", "when", "yesterday", "where", "home", "why", "idk", "how", "who cares"]
 
-new_strings = []
+# new_strings = []
+
+# i = 0
+# while i < strings.length
+#   if strings[i][0].downcase == "w"
+#     new_strings << strings[i]
+#   end
+#   i += 1
+# end
+
+# p new_strings 
+
+#  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+items = [
+  {name: "chair", price: 100}, 
+  {name: "pencil", price: 1}, 
+  {name: "book", price: 4},
+  {name: "laptop", price: 1500},
+  {name: "tv", price: 500},
+  
+]
+new_items = []
 
 i = 0
-while i < strings.length
-  if strings[i][0].downcase == "w"
-    new_strings << strings[i]
+while i < items.length
+  if items[i][:price] > 5
+    new_items << items[i]
   end
   i += 1
 end
 
-p new_strings 
+p new_items
 
-#  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
-#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
