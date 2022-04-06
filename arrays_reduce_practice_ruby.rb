@@ -1,27 +1,51 @@
 #  1. Start with an array of numbers and compute the sum of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 26.
 
-# numbers = [40, 80, 10, 90]
-# sum = 0
-# i = 0
-# while i < numbers.length
-#   sum = sum + numbers[i]
-#   i += 1
-# end
-# p sum
+numbers = [40, 80, 10, 90]
+sum = 0
+i = 0
+while i < numbers.length
+  sum = sum + numbers[i]
+  i += 1
+end
+p sum
 
-# numbers.each do |number|
-#   sum = sum + number
-# end
-# p sum
+numbers.each do |number|
+  sum = sum + number
+end
+p sum
 
-# numbers.select do |number|
-#   sum = sum + number
-# end
-# p sum
+numbers = [1, 4, 9, 10]
+sum = numbers.reduce(0) { |sum, number| sum + number }
+
+p sum
+
+numbers = [1, 4, 10]
+sum = numbers.reduce(0) do |sum, number|
+  sum + number
+end
+p sum
+
+numbers.select do |number|
+  sum = sum + number
+end
+p sum
 
 #  2. Start with an array of strings and combine them all into a single string.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
+
+# sports = ["volleyball", "basketball", "badminton"]
+# sports_string = ""
+
+# i = 0
+# while i < sports.length
+#   sports_string << sports[i]
+#   i += 1
+# end
+
+# p sports_string
+
+
 
 
 
