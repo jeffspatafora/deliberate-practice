@@ -1,8 +1,29 @@
 #  1. Start with an array of numbers and compute the sum of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 26.
 
+# numbers = [40, 80, 10, 90]
+# sum = 0
+# i = 0
+# while i < numbers.length
+#   sum = sum + numbers[i]
+#   i += 1
+# end
+# p sum
+
+# numbers.each do |number|
+#   sum = sum + number
+# end
+# p sum
+
+# numbers.select do |number|
+#   sum = sum + number
+# end
+# p sum
+
 #  2. Start with an array of strings and combine them all into a single string.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
+
+
 
 #  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
