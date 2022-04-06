@@ -162,30 +162,47 @@
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
-items = [{name: "chair", price: 9}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# items = [{name: "chair", price: 9}, {name: "pencil", price: 1}, {name: "book", price: 4}]
 
-new_items = []
+# new_items = []
 
-i = 0
-while i < items.length
-  if items[i][:price] < 10
-    new_items << items[i]
-  end
-  i += 1
-end
+# i = 0
+# while i < items.length
+#   if items[i][:price] < 10
+#     new_items << items[i]
+#   end
+#   i += 1
+# end
 
-p new_items
+# p new_items
 
-new_items = items.select do |item|
-  item[:price] < 10
-end
+# new_items = items.select do |item|
+#   item[:price] < 10
+# end
 
-p new_items
+# p new_items
 
 
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
 
+
+numbers = [2, 4, 5, 1, 8, 9, 7]
+
+new_numbers = numbers.select do |number|
+  number % 2 == 1
+end
+p new_numbers
+
+new_numbers = []
+i = 0
+while i < numbers.length
+  if numbers[i] % 2 == 1
+    new_numbers << numbers[i]
+  end
+  i += 1
+end
+p new_numbers
 
 
 
