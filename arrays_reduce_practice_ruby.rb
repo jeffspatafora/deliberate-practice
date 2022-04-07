@@ -83,32 +83,54 @@
 #  4. Start with an array of numbers and compute the the minumum number.
 #     For example, [5, 10, 8, 3, 9] becomes 3.
 
-numbers = [20, 34, 15, 19, 10]
+# numbers = [20, 34, 15, 19, 10]
 
-minumum_number = numbers[0]
-i = 0
-while i < numbers.length
-  if minumum_number > numbers[i]
-    minumum_number = numbers[i]
-  end
-  i += 1
-end
+# minumum_number = numbers[0]
+# i = 0
+# while i < numbers.length
+#   if minumum_number > numbers[i]
+#     minumum_number = numbers[i]
+#   end
+#   i += 1
+# end
 
-p minumum_number
+# p minumum_number
 
-minumum_number = numbers.reduce(numbers[0]) do |minumum_number, number|
-  if minumum_number > number
-    number
-  else
-    minumum_number
-  end
-end
+# minumum_number = numbers.reduce(numbers[0]) do |minumum_number, number|
+#   if minumum_number > number
+#     number
+#   else
+#     minumum_number
+#   end
+# end
 
-p minumum_number
+# p minumum_number
 
 
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
+
+strings = ["volleyball", "basketball", "badminton", "baseball"]
+
+total_length = 0
+i = 0
+while i < strings.length
+  total_length = total_length + strings[i].length
+  i += 1
+end
+
+p total_length
+
+total_length = 0
+strings.each do |string|
+  total_length = total_length + string.length
+end
+p total_length
+
+total_length = strings.reduce(0) { |total_length, string| total_length + string.length }
+
+p total_length
+
 
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
