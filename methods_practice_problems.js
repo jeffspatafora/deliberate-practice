@@ -44,11 +44,15 @@
 
 // # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
 
-var number = window.prompt("enter a number: ");
-if (parseInt(number) < 0) {
-  console.log("That's a negative number.");
-}
+// var number = window.prompt("enter a number: ");
+// if (parseInt(number) < 0) {
+//   console.log("That's a negative number.");
+// }
 
 // # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
+let number1 = window.prompt("enter a number: ");
+let number2 = window.prompt("enter another number: ");
+
+console.log(parseInt(number1) + parseInt(number2));
 // # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
