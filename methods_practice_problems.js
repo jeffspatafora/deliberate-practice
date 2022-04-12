@@ -51,8 +51,14 @@
 
 // # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
-let number1 = window.prompt("enter a number: ");
-let number2 = window.prompt("enter another number: ");
+// let number1 = window.prompt("enter a number: ");
+// let number2 = window.prompt("enter another number: ");
 
-console.log(parseInt(number1) + parseInt(number2));
+// console.log(parseInt(number1) + parseInt(number2));
+
 // # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
+
+let word = window.prompt("enter a word: ");
+if (word.length > 5) {
+  console.log("that's a long word");
+}
