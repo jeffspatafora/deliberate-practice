@@ -9,7 +9,12 @@
 
 // # 2. Write a while loop that prints the word "hello" 5 times.
 
-
+// let string = "hello";
+// let count = 1;
+// while (count <= 5) {
+//   console.log(string);
+//   count++;
+// }
 
 // # 3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
 
