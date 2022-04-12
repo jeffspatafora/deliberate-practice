@@ -37,12 +37,17 @@
 
 // # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
-var word = window.prompt("enter a word: ");
+// var word = window.prompt("enter a word: ");
 
-// var word = "hello";
-console.log(word.length);
+// // var word = "hello";
+// console.log(word.length);
 
 // # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+var number = window.prompt("enter a number: ");
+if (parseInt(number) < 0) {
+  console.log("That's a negative number.");
+}
 
 // # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
