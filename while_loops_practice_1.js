@@ -18,6 +18,18 @@
 
 // # 3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
 
+// var word = window.prompt("enter a word, enter 'stop' to end");
+// while (word.toLowerCase() !== "stop") {
+//   word = window.prompt("enter another word, enter 'stop to end'");
+// }
+
+// while (true) {
+//   var word = window.prompt("enter a word, enter 'stop' to end");
+//   if (word.toLowerCase() === "stop") {
+//     break;
+//   }
+// }
+
 // # 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
 // # 5. Write a while loop that prints the number 9000 ten times.
