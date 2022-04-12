@@ -18,10 +18,13 @@
 
 // # 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
 
-var word = window.prompt("enter a word: ");
-console.log(word.split("").reverse().join(""));
+// var word = window.prompt("enter a word: ");
+// console.log(word.split("").reverse().join(""));
 
 // # 5. Write a program that asks the user to enter a number, then prints the number times 10.
+
+var number = window.prompt("enter a number: ")
+console.log(parseInt(number * 10));
 
 // # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
