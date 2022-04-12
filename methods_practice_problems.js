@@ -29,13 +29,18 @@
 // # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
 
-var word1 = window.prompt("enter a word: ");
-var word2 = window.prompt("enter another word: ");
-// var word1 = "hello";
-// var word2 = "goodbye";
-console.log(`${word1.toUpperCase()} ${word2.toUpperCase()}`);
+// var word1 = window.prompt("enter a word: ");
+// var word2 = window.prompt("enter another word: ");
+// // var word1 = "hello";
+// // var word2 = "goodbye";
+// console.log(`${word1.toUpperCase()} ${word2.toUpperCase()}`);
 
 // # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+var word = window.prompt("enter a word: ");
+
+// var word = "hello";
+console.log(word.length);
 
 // # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
 
