@@ -1,6 +1,23 @@
 #  1. Convert an array of arrays into a hash.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
 
+numbers_hash = {}
+numbers_array = [[1, 3], [8, 9], [2, 16], [7, 20], [88, 1], [4, 44]]
+
+
+# p numbers_array[0][1]
+
+# numbers_hash[numbers_array[0][0]] = numbers_array[0][1]
+
+i = 0
+while i < numbers_array.length
+  numbers_hash[numbers_array[i][0]] = numbers_array[i][1]
+  i += 1
+end
+
+p numbers_hash
+
+
 
 
 #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
