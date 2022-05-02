@@ -26,14 +26,20 @@
 
 // # 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
 
-let numbers = [1];
-console.log(numbers);
-numbers.push(43);
-numbers.push(110);
-numbers.push(19);
-console.log(numbers);
+// let numbers = [1];
+// console.log(numbers);
+// numbers.push(43);
+// numbers.push(110);
+// numbers.push(19);
+// console.log(numbers);
 
 // # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+let words = ["hello", "how", "are", "you"];
+console.log(words);
+words[2] = words[2].toUpperCase();
+console.log(words);
+
 
 // # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
