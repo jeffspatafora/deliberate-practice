@@ -43,14 +43,19 @@
 
 // # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
-let names = ['jeff', 'katie', 'chauncey', 'petey', 'penny'];
-let i = 0;
-while (i < names.length) {
-  console.log(names[i]);
-  i++;
-}
+// let names = ['jeff', 'katie', 'chauncey', 'petey', 'penny'];
+// let i = 0;
+// while (i < names.length) {
+//   console.log(names[i]);
+//   i++;
+// }
 
 // # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+let words = ['word1', 'word2'];
+console.log(words);
+words.push('word3');
+console.log(words);
 
 // # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
