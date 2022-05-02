@@ -1,13 +1,19 @@
 // # 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
 
-let words = ["hello", "how", "are"];
-console.log(words);
-words.push("you");
-words.push("today");
-console.log(words);
+// let words = ["hello", "how", "are"];
+// console.log(words);
+// words.push("you");
+// words.push("today");
+// console.log(words);
 
 
 // # 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+let letters = ['h', 'e', 'y', 's'];
+console.log(letters);
+letters[1] = 44;
+console.log(letters);
+
 
 // # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
