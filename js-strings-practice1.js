@@ -19,11 +19,11 @@
 
 // # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
 
-let red = "red";
-let blue = "blue";
-let yellow = "yellow";
+// let red = "red";
+// let blue = "blue";
+// let yellow = "yellow";
 
-console.log(red + " " + blue + " " + yellow + " ");
+// console.log(red + " " + blue + " " + yellow + " ");
 
 // # 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
 
