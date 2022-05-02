@@ -10,7 +10,7 @@
 letters = ["a", "b", "c", "d"]
 p letters
 letters[1] = 2
-p lettersgit 
+p letters
 
 
 # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
