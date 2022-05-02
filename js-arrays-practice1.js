@@ -17,14 +17,21 @@
 
 // # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-let numbers = [20, 4, 190, 34, 5];
-let i = 0;
-while (i < numbers.length) {
-  console.log(numbers[i]);
-  i++;
-}
+// let numbers = [20, 4, 190, 34, 5];
+// let i = 0;
+// while (i < numbers.length) {
+//   console.log(numbers[i]);
+//   i++;
+// }
 
 // # 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+let numbers = [1];
+console.log(numbers);
+numbers.push(43);
+numbers.push(110);
+numbers.push(19);
+console.log(numbers);
 
 // # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
