@@ -1,12 +1,17 @@
 // # 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
 
-let firstName = "chauncey";
-let lastName = "billups";
+// let firstName = "chauncey";
+// let lastName = "billups";
 
-console.log(firstName + " " + lastName);
+// console.log(firstName + " " + lastName);
 
 
 // # 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+
+let firstName = "chauncey";
+let lastName = "billups";
+
+console.log(`${firstName} ${lastName}`);
 
 // # 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
 
