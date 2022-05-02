@@ -52,12 +52,18 @@
 
 // # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
-let words = ['word1', 'word2'];
-console.log(words);
-words.push('word3');
-console.log(words);
+// let words = ['word1', 'word2'];
+// console.log(words);
+// words.push('word3');
+// console.log(words);
 
 // # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+
+let numbers = [100, 2, 3, 4, 5];
+console.log(numbers);
+numbers[0] = numbers[0] * 10;
+console.log(numbers);
+
 
 // # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
