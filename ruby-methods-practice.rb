@@ -16,7 +16,7 @@ puts "enter a word: "
 word = gets.chomp
 i = 1
 10.times do
-  puts "#{word} #{i}"
+  puts word + i.to_s
   i += 1
 end
 
