@@ -23,33 +23,44 @@
 #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
 #     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
 
-array = [
-  {
-    id: 1, 
-    color: "blue", 
-    price: 32
-  }, 
-  {
-    id: 2, 
-    color: "red", 
-    price: 12
-  }
-]
+# array = [
+#   {
+#     id: 1, 
+#     color: "blue", 
+#     price: 32
+#   }, 
+#   {
+#     id: 2, 
+#     color: "red", 
+#     price: 12
+#   }
+# ]
 
-hash = {}
+# hash = {}
 
-i = 0
-while i < array.length
-  hash[array[i][:id]] = array[i]
-  i += 1
-end
+# i = 0
+# while i < array.length
+#   hash[array[i][:id]] = array[i]
+#   i += 1
+# end
 
-p hash
+# p hash
 
 
 
 #  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 #     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+
+string = "jeff spatafora"
+hash = {}
+
+i = 0
+while i < string.length
+  hash[string[i]] = string.count string[i]
+  i += 1
+end
+
+p hash
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
