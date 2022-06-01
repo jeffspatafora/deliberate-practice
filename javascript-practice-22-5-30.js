@@ -17,6 +17,10 @@
 
 // # 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
 
+let word = window.prompt("enter a word: ");
+
+
+
 
 // # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
 
