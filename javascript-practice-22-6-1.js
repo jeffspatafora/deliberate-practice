@@ -22,16 +22,24 @@
 
 // # 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
 
-let number1 = 1;
-let number2 = 10;
+// let number1 = 1;
+// let number2 = 10;
 
-if (number1 < 10 && number2 < 10) {
-  console.log(1);
-} else {
-  console.log(0);
-}
+// if (number1 < 10 && number2 < 10) {
+//   console.log(1);
+// } else {
+//   console.log(0);
+// }
 
 // # 4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
+
+let number = 9001;
+
+if (number > 9000) {
+  console.log(1);
+} else {
+  console.log(-1);
+}
 
 // # 5. Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur).
 
