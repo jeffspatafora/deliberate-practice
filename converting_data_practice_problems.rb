@@ -51,19 +51,41 @@
 #  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 #     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
 
-string = "jeff spatafora"
-hash = {}
+# string = "jeff spatafora"
+# hash = {}
 
-i = 0
-while i < string.length
-  hash[string[i]] = string.count string[i]
-  i += 1
-end
+# i = 0
+# while i < string.length
+#   hash[string[i]] = string.count string[i]
+#   i += 1
+# end
 
-p hash
+# p hash
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+
+hash = {"chair" => 100, "book" => 14, "boat" => 2000, "movie" => "15"}
+array_in = []
+array_out = []
+
+i = 0
+while i < hash.length
+  array_in << hash.keys[i] 
+  array_in << hash.values[i]
+  array_out << array_in
+  array_in = []
+  i += 1
+end
+
+p array_out
+
+
+# i = 0
+# while i < hash.length
+#   array_in << hash
+# end
+
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
