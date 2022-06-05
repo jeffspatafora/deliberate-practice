@@ -11,16 +11,19 @@
 
 # 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
 
-def all_caps(string)
-  return string.upcase
-end
-
-p all_caps("hello world")
-p all_caps("you are free")
 
 
 
 # 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
+
+def subtract(number1, number2)
+  return number1 - number2
+end
+
+p subtract(10, 5)
+p subtract(20, 13)
+p subtract(1, 24)
+
 
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
 
