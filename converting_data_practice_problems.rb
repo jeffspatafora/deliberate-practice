@@ -65,26 +65,27 @@
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
-hash = {"chair" => 100, "book" => 14, "boat" => 2000, "movie" => "15"}
-array_in = []
-array_out = []
+# hash = {"chair" => 100, "book" => 14, "boat" => 2000, "movie" => "15"}
+# array_in = []
+# array_out = []
 
-i = 0
-while i < hash.length
-  array_in << hash.keys[i] 
-  array_in << hash.values[i]
-  array_out << array_in
-  array_in = []
-  i += 1
-end
+# i = 0
+# while i < hash.length
+#   array_in << hash.keys[i] 
+#   array_in << hash.values[i]
+#   array_out << array_in
+#   array_in = []
+#   i += 1
+# end
 
-p array_out
+# p array_out
 
 
 # i = 0
 # while i < hash.length
 #   array_in << hash
 # end
+
 
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
