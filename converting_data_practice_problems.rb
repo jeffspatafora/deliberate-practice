@@ -91,36 +91,36 @@
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
 
-people = { 321 => { name: "Alice", age: 31 }, 322 => { name: "Maria", age: 27 } }
-people_array = []
-people.each do |id, person|
-  person[:id] = id
-  people_array << person
-end
-p people_array
+# people = { 321 => { name: "Alice", age: 31 }, 322 => { name: "Maria", age: 27 } }
+# people_array = []
+# people.each do |id, person|
+#   person[:id] = id
+#   people_array << person
+# end
+# p people_array
 
 
-people = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
-person = {}
-people_array = []
+# people = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+# person = {}
+# people_array = []
 
-# p people.values[0].keys[0]
-# p people.values[0].values[0]
-# p people.values[0].keys[1]
-# p people.values[0].values[1]
+# # p people.values[0].keys[0]
+# # p people.values[0].values[0]
+# # p people.values[0].keys[1]
+# # p people.values[0].values[1]
 
 
-i = 0
-while i < people.length
-  person[:id] = people.keys[i]
-  person[people.values[i].keys[i]] = people.values[i].values[i]
-  person[people.values[i].keys[i + 1]] = people.values[i].values[i + 1]
-  people_array << person
-  person = {}
-  i += 1
-end
+# i = 0
+# while i < people.length
+#   person[:id] = people.keys[i]
+#   person[people.values[i].keys[i]] = people.values[i].values[i]
+#   person[people.values[i].keys[i + 1]] = people.values[i].values[i + 1]
+#   people_array << person
+#   person = {}
+#   i += 1
+# end
 
-p people_array
+# p people_array
 
 
 
