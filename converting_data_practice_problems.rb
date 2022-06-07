@@ -91,20 +91,65 @@
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
 
-hash = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
-inner_hash = {}
-array = [id: 0]
+people = { 321 => { name: "Alice", age: 31 }, 322 => { name: "Maria", age: 27 } }
+people_array = []
+people.each do |id, person|
+  person[:id] = id
+  people_array << person
+end
+p people_array
 
-p hash.values[0].keys[0]
+
+people = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+person = {}
+people_array = []
+
+# p people.values[0].keys[0]
+# p people.values[0].values[0]
+# p people.values[0].keys[1]
+# p people.values[0].values[1]
+
 
 i = 0
-while i < hash.length
-  inner_hash[:id] = hash.keys[i]
-  inner_hash[hash.values[i].keys[i]] = hash.values[i].values[i]
+while i < people.length
+  person[:id] = people.keys[i]
+  person[people.values[i].keys[i]] = people.values[i].values[i]
+  person[people.values[i].keys[i + 1]] = people.values[i].values[i + 1]
+  people_array << person
+  person = {}
   i += 1
 end
 
-p inner_hash
+p people_array
+
+
+
+# hash = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+# inner_hash = {}
+# array = []
+
+# # p hash.values[0].values[0]
+
+# inner_hash[:id] = hash.keys[0]
+# array << inner_hash
+# p array
+# inner_hash = {}
+# inner_hash[hash.values[0].keys[0]] = hash.values[0].values[0]
+# array[0] << inner_hash
+# p array
+
+# i = 0
+# while i < hash.length
+#   inner_hash[:id] = hash.keys[i]
+#   array << inner_hash
+  # p inner_hash
+  # array << inner_hash
+  # inner_hash = {}
+#   i += 1
+# end
+
+# p array
+
 
 
 
