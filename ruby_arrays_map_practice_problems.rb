@@ -10,9 +10,15 @@ def times_three(numbers_array)
 end
 
 p times_three([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+p times_three([])
+p times_three(["y", 1, "two", 77, -1, "u"])
 
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+
+def upcase_string_array(strings_array)
+  
+end
 
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
