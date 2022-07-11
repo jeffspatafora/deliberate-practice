@@ -15,10 +15,19 @@ def plus7(numbers)
     numbers_plus7 << numbers[i] + 7
     i += 1
   end
-  p numbers_plus7
+  numbers_plus7
 end
 
-plus7([1, 2, 3])
+p plus7([1, 2, 3])
+
+def plus7(numbers)
+  numbers_plus7 = numbers.map do |number|
+    number + 7
+  end
+  numbers_plus7
+end
+
+p plus7([1, 2, 3])
 
  
 # #2
@@ -26,7 +35,17 @@ plus7([1, 2, 3])
 # Example:
 # Input: ["hello", "goodbye"]
 # Output: [5, 7]
- 
+
+def strings_length(strings)
+  strings_length_numbers = []
+  strings.each do |string|
+    strings_length_numbers << string.length
+  end
+  p strings_length_numbers
+end
+
+strings_length(["hello", "goodbye"])
+
 # #3
 # Write a function that accepts an array of numbers and returns an array with each number divided by 2.
 # Example:
