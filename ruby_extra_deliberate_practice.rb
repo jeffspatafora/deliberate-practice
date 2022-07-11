@@ -60,12 +60,26 @@ strings_length(["hello", "goodbye", "how", "are", "you", "today"])
 # Example:
 # Input: [1, 2, 3]
 # Output: [0.5, 1.0, 1.5]
+
+def divided_by2(numbers)
+  numbers_divided_by2 = []
+  i = 0
+  while i < numbers.length
+    numbers_divided_by2 << numbers[i].to_f / 2
+    i += 1
+  end
+  numbers_divided_by2
+end 
+
+p divided_by2([5, 6, 8, 10])
  
 # #4
 # Write a function that accepts an array of strings and returns an array with each string's first letter only.
 # Example:
 # Input: ["hello", "goodbye"]
 # Output: ["h", "g"]
+
+
  
 # #5
 # Write a function that accepts an array of numbers and returns an array with each number converted into a string.
