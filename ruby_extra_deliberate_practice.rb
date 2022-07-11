@@ -46,6 +46,15 @@ end
 
 strings_length(["hello", "goodbye"])
 
+
+def strings_length(strings)
+  strings_length_numbers = strings.map { |string| string.length }
+  p strings_length_numbers
+end 
+
+strings_length(["hello", "goodbye", "how", "are", "you", "today"])
+
+
 # #3
 # Write a function that accepts an array of numbers and returns an array with each number divided by 2.
 # Example:
