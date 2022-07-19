@@ -30,17 +30,43 @@
 
 // # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
-let strings = ["how", "are", "you"];
-strings[2] = strings[2].toUpperCase();
-console.log(strings);
+// let strings = ["how", "are", "you"];
+// strings[2] = strings[2].toUpperCase();
+// console.log(strings);
 
 
 // # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
+let names = ["john", "paul", "george"];
+let i = 0;
+while (i < names.length) {
+  console.log(names[i]);
+  i++;
+}
+
+
 // # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+let strings = ["these", "are"];
+strings.push("strings");
+console.log(strings);
 
 // # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
+let numbers = [20, 30, 40, 50, 60];
+numbers[0] = numbers[0] * 10;
+console.log(numbers);
+
 // # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
+let twoNumbers = [68, 34];
+let index = 0;
+while (index < twoNumbers.length) {
+  console.log(twoNumbers[index]);
+  index++;
+}
+
+
 // # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+
