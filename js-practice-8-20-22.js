@@ -53,17 +53,17 @@
 
 // # 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
 
-const firstName = "Jeff";
-const lastName = "Spatafora";
+// const firstName = "Jeff";
+// const lastName = "Spatafora";
 
-console.log(firstName + " " + lastName);
+// console.log(firstName + " " + lastName);
 
 // # 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
 
-const firstName1 = "Jeff";
-const lastName1 = "Spatafora";
+// const firstName1 = "Jeff";
+// const lastName1 = "Spatafora";
 
-console.log(`${firstName} ${lastName1}`);
+// console.log(`${firstName} ${lastName1}`);
 
 // # 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
 
@@ -75,29 +75,29 @@ console.log(`${firstName} ${lastName1}`);
 
 // # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
 
-const color1 = 'red';
-const color2 = 'blue';
-const color3 = 'yellow';
+// const color1 = 'red';
+// const color2 = 'blue';
+// const color3 = 'yellow';
 
-console.log(color1 + ' ' + color2 + ' ' + color3);
+// console.log(color1 + ' ' + color2 + ' ' + color3);
 
 
 // # 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
 
-const color4 = 'black';
-const color5 = 'white';
-const color6 = 'grey';
+// const color4 = 'black';
+// const color5 = 'white';
+// const color6 = 'grey';
 
-console.log(`${color4} ${color5} ${color6}`);
+// console.log(`${color4} ${color5} ${color6}`);
 
 // # 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-let personName = window.prompt('enter your name: ');
-if (personName.toLowerCase() !== 'santa') {
-  console.log('you are not santa');
-} else if (personName.toLowerCase() === 'santa') {
-  console.log('merry christmas, santa!');
-}
+// let personName = window.prompt('enter your name: ');
+// if (personName.toLowerCase() !== 'santa') {
+//   console.log('you are not santa');
+// } else if (personName.toLowerCase() === 'santa') {
+//   console.log('merry christmas, santa!');
+// }
 
 
 // # 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
@@ -107,3 +107,46 @@ if (personName.toLowerCase() !== 'santa') {
 // # 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
 
 // # 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+
+// # 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
+
+let word = window.prompt('enter a word: ');
+console.log(word.toUpperCase());
+
+// # 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
+
+
+let number = window.prompt('enter a number: ');
+if (parseInt(number) > 100) {
+  console.log("that's a big number!");
+}
+
+// # 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
+
+let number1 = window.prompt('enter a number: ');
+let number2 = window.prompt('enter another number: ');
+let sum = parseInt(number1) + parseInt(number2);
+console.log(`the sum of your numbers is ${sum}`);
+
+// # 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
+
+let word1 = window.prompt('enter a word: ');
+console.log(word.reverse());
+
+// # 5. Write a program that asks the user to enter a number, then prints the number times 10.
+
+let word2 = window.prompt('enter a word: ');
+
+
+
+// # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
+
+// # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+// # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+// # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
+
+// # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
+

@@ -56,13 +56,13 @@
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
-def number_to_string(number)
-  number.to_s
-end
+# def number_to_string(number)
+#   number.to_s
+# end
 
-p number_to_string(10)
-p number_to_string(99)
-p number_to_string(5)
+# p number_to_string(10)
+# p number_to_string(99)
+# p number_to_string(5)
 
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
@@ -70,4 +70,16 @@ p number_to_string(5)
 
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
 
+
+# Write a program that asks the user to enter a number, then prints the number times 10.
+
+
+puts 'enter a word: '
+
+word = gets.chomp
+i = 1
+10.times do
+  puts word + i.to_s
+  i += 1
+end
 
