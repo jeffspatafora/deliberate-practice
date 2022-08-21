@@ -8,18 +8,42 @@
 
 // # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-let people = [
-  { firstName: "jeff", lastName: "spatafora" },
-  { firstName: "katie", lastName: "rupe" },
-  { firstName: "chauncey", lastName: "billups" }
-];
+// let people = [
+//   { firstName: "jeff", lastName: "spatafora" },
+//   { firstName: "katie", lastName: "rupe" },
+//   { firstName: "chauncey", lastName: "billups" }
+// ];
 
-console.log(people[0].firstName);
-console.log(people[0].lastName);
+// console.log(people[0].firstName);
+// console.log(people[0].lastName);
 
 // # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
+// let menu = {
+//   "hotdog": 1,
+//   "fries": 2,
+//   "soda": 3
+// };
+
+// console.log(menu.hotdog);
+// menu["pizza"] = 4.50;
+// menu.iceCream = 5;
+// console.log(menu);
+
 // # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+// let book = {
+//   title: 'the pearl',
+//   author: 'john stienbeck',
+//   pageCount: 150,
+//   language: "english"
+// };
+// console.log(book.title);
+// console.log(book.author);
+// console.log(book.pageCount);
+// console.log(book.language);
+
+
 
 // # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 

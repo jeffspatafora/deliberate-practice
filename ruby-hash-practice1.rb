@@ -13,6 +13,8 @@ p book[:pages]
 p book[:author]
 p book[:language]
 
+
+
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
 
