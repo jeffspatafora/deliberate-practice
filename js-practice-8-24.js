@@ -102,6 +102,14 @@ console.log(book.title);
 console.log(book.author);
 console.log(book.numberOfPages);
 
+const hash = {
+  one: 1,
+  two: 2,
+  three: 3,
+};
+
+console.log(Object.values(hash)[1]);
+
 // let i = 0;
 // while (i < book.length) {
 //   console.log(book.values[i]);
