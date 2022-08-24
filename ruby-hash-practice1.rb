@@ -8,10 +8,20 @@
 
 book = {'title' => 'the pearl', pages: 100, author: 'steinbeck', language: 'english'}
 
-p book['title']
-p book[:pages]
-p book[:author]
-p book[:language]
+# p book.values[2]
+
+i = 0
+while i < book.length
+  p book.values[i]
+  i += 1
+end
+
+# p book['title']
+# p book[:pages]
+# p book[:author]
+# p book[:language]
+
+
 
 
 
