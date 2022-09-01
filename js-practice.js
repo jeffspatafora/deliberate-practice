@@ -146,16 +146,56 @@ stringsUpperCase(["hello", "goodbye"]);
 // #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
+function getNames(peopleArray) {
+  const justNames = peopleArray.map(function (person) {
+    return person.name;
+  });
+  console.log(justNames);
+}
+
+getNames([{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]);
 
 
 // #  4. Start with an array of numbers and create a new array with each number plus 7.
 // #     For example, [1, 2, 3] becomes [8, 9, 10].
 
+function plusSeven(numbers2) {
+  const numbersPlusSeven = numbers2.map(function (number) {
+    return number + 7;
+  });
+  console.log(numbersPlusSeven);
+}
+
+plusSeven([1, 2, 3]);
+plusSeven([0, 20, 45]);
+plusSeven([-10, 77, 100]);
+
 // #  5. Start with an array of strings and create a new array with each string's length.
 // #     For example, ["hello", "goodbye"] becomes [5, 7].
 
+function stringLength(strings) {
+  const justStringLength = strings.map(function (string) {
+    return string.length;
+  });
+  console.log(justStringLength)
+}
+
+stringLength(["hello", "goodbye"]);
+stringLength(["hellojdjdjjejdj", "goodbye1010101"]);
+stringLength(["hellorrrrrrr", "goodbyeoqoqoqoqoqoqoqoqoqoqoqoqoqoqoqoqqooqoq"]);
+
 // #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+
+function getAges(people) {
+  const justAges = people.map(function (person) {
+    return person.age;
+  });
+  console.log(justAges);
+}
+
+getAges([{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]);
+
 
 // #  7. Start with an array of numbers and create a new array with each number divided by 2.
 // #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
